@@ -2,6 +2,17 @@
 // import React from "react";
 // import ReactDOM from "react-dom";
 
+import animals from "./data";
+console.log(animals);
+
+// destructure  the animals array and give the object names instead of position
+const [cat, dog] = animals;
+
+// a constant literal pulling the properties from the cat object
+const { name, sound } = cat;
+
+console.log(sound);
+// same as var cat = animals[0];
 // ReactDOM.render(
 //   <table>
 //     <tr>
