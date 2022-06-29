@@ -2,7 +2,7 @@
 // import React from "react";
 // import ReactDOM from "react-dom";
 
-import animals from "./data";
+import animals, { useAnimals } from "./data";
 console.log(animals);
 
 // destructure  the animals array and give the object names instead of position
@@ -33,6 +33,18 @@ const {
   feedingRequirements: { food, water }
 } = cat;
 console.log(food);
+
+// use function and pass animal object cat.
+useAnimals(cat);
+
+console.log(useAnimals(cat));
+
+// output of function above is an array
+// create an array literal
+const [animal, makeSound] = useAnimals(cat);
+
+console.log(animal);
+makeSound();
 
 // ReactDOM.render(
 //   <table>
