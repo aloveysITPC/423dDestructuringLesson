@@ -13,6 +13,10 @@ const { name, sound } = cat;
 
 console.log(sound);
 // same as var cat = animals[0];
+
+// can also do a renaming of properties to make things more usable
+const { name: catName, sound: catSound } = cat;
+console.log(catSound);
 // ReactDOM.render(
 //   <table>
 //     <tr>
